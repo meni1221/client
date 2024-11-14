@@ -7,14 +7,11 @@ interface Missil {
   description: string;
   speed: number;
   intercepts: number;
-  price:number
+  price: number;
 }
 
-
-
-export default function DisplayMissiles() {
+export default function DisplayMissiles(props: Missil) {
   const { misslies, setMisslies } = useContext(MisslieContext);
-
 
   const Buy = (name: string) => {
     setMisslies((misslies) => {
@@ -34,7 +31,7 @@ export default function DisplayMissiles() {
           <p> {missile.price}</p>
           <button
             onClick={() => {
-              ;
+              Buy;
             }}
           >
             Buy
