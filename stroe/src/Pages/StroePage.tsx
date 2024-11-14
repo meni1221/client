@@ -23,7 +23,7 @@ export default function DisplayMissiles() {
   };
   return (
     <>
-      <PageHeader title="Users pages" subtitle="welcome users pages" />
+      <PageHeader title="Misslies pages" subtitle="welcome to Misslies pages" />
       <br />
       {misslies!.map((missile) => (
         <div className="card" key={missile.name}>
